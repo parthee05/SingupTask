@@ -4,11 +4,12 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SinginComponent } from './singin/singin/singin.component';
+import { SinginComponent } from './singin/singin.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import {FormsModule} from '@angular/forms';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     MDBBootstrapModule.forRoot(),
   ],
   providers: [],
