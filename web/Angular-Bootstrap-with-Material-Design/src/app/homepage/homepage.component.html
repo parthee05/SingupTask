@@ -1,0 +1,627 @@
+<header class="h-100">
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav" [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="logo navbar-brand" href="#">
+        <strong>Navbar</strong>
+      </a>
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active waves-light" mdbWavesEffect>
+          <a class="nav-link">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link">Link</a>
+        </li>
+        <li class="nav-item waves-light" mdbWavesEffect>
+          <a class="nav-link">Profile</a>
+        </li>
+      </ul>
+      
+      <div class="d-flex justify-content-end">
+        <a [routerLink]="'/Singin'"> <button  mdbBtn type="button" color="primary"  mdbWavesEffect>
+          <mdb-icon fas icon="user"></mdb-icon>Profile
+        </button>
+        </a>
+      </div>
+    </links>
+      
+  </mdb-navbar>
+  <!-- Main -->
+  <div class="view intro-2">
+    <div class="full-bg-img">
+      <div class="mask rgba-purple-light flex-center">
+        <div class="container text-center white-text wow fadeInUp">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.Main -->
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main class="text-center py-5">
+
+  <div class="container">
+  
+    <div class="row">
+      <div class="col-md-12">
+            
+          <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-3">
+                <!--Card-->
+                <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                  <!--Card image-->
+                  <div class=" view-cascade overlay waves-light" mdbWavesEffect>
+                    <mdb-card-img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/1.jpg" alt="sample photo"></mdb-card-img>
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+                  <!--Card content-->
+                  <mdb-card-body cascade="true" class="text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Denim</h5>
+                    </a>
+                    <mdb-card-title>
+                      <h4>
+                        <strong>
+                          <a href="">Denim trousers</a>
+                        </strong>
+                      </h4>
+                    </mdb-card-title>
+          
+                    <!--Rating-->
+                    <ul class="rating">
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                    </ul>
+                    <!--Description-->
+                    <mdb-card-text>Neque porro quisquam est, qui dolorem ipsum quia dolor sit..
+                    </mdb-card-text>
+                    <!--Card footer-->
+                    <mdb-card-footer>
+                      <span class="float-left font-weight-bold">
+                        <strong>49$</strong>
+                      </span>
+                      <span class="float-right">
+                        <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                          <mdb-icon fas icon="shopping-cart" class="grey-text ml-3"></mdb-icon>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Share">
+                          <mdb-icon fas icon="share-alt" class="grey-text ml-3"></mdb-icon>
+                        </a>
+                        <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                          <mdb-icon fas icon="heart" class="ml-3"></mdb-icon>
+                        </a>
+                      </span>
+                    </mdb-card-footer>
+                  </mdb-card-body>
+                  <!--Card content-->
+                </mdb-card>
+                <!--Card-->
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-3">
+                <!--Card-->
+                <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                  <!--Card image-->
+                  <div class=" view-cascade overlay waves-light" mdbWavesEffect>
+                    <mdb-card-img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/2.jpg" alt="sample photo"></mdb-card-img>
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+                  <!--Card content-->
+                  <mdb-card-body cascade="true" class="text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Shoes</h5>
+                    </a>
+                    <mdb-card-title>
+                      <h4 class="card-title">
+                        <strong>
+                          <a href="">High heels</a>
+                        </strong>
+                      </h4>
+                    </mdb-card-title>
+          
+                    <!--Rating-->
+                    <ul class="rating">
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                    </ul>
+                    <!--Description-->
+                    <mdb-card-text>Neque porro quisquam est, qui dolorem ipsum quia dolor sit.
+                    </mdb-card-text>
+                    <!--Card footer-->
+                    <mdb-card-footer>
+                      <span class="float-left font-weight-bold">
+                        <strong>89$</strong>
+                      </span>
+                      <span class="float-right">
+                         <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                          <mdb-icon fas icon="shopping-cart" class="grey-text ml-3"></mdb-icon>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Share">
+                          <mdb-icon fas icon="share-alt" class="grey-text ml-3"></mdb-icon>
+                        </a>
+                        <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                          <mdb-icon fas icon="heart" class="ml-3"></mdb-icon>
+                        </a>
+                      </span>
+                    </mdb-card-footer>
+                  </mdb-card-body>
+                  <!--Card content-->
+                </mdb-card>
+                <!--Card-->
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-3">
+                <!--Card-->
+                <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                  <!--Card image-->
+                  <div class=" view-cascade overlay waves-light" mdbWavesEffect>
+                    <mdb-card-img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/4.jpg" alt="sample photo"></mdb-card-img>
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+                  <!--Card content-->
+                  <mdb-card-body cascade="true" class="text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Outwear</h5>
+                    </a>
+                    <mdb-card-title>
+                      <h4 class="card-title">
+                        <strong>
+                          <a href="">Brown coat</a>
+                        </strong>
+                      </h4>
+                    </mdb-card-title>
+                    <!--Rating-->
+                    <ul class="rating">
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star-half"></mdb-icon>
+                      </li>
+                    </ul>
+                    <!--Description-->
+                    <mdb-card-text>Neque porro quisquam est, qui dolorem ipsum quia dolor sit.
+                    </mdb-card-text>
+                    <!--Card footer-->
+                    <mdb-card-footer>
+                      <span class="float-left font-weight-bold">
+                        <strong>59$</strong>
+                      </span>
+                      <span class="float-right">
+                        <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                         <mdb-icon fas icon="shopping-cart" class="grey-text ml-3"></mdb-icon>
+                       </a>
+                       <a data-toggle="tooltip" data-placement="top" title="Share">
+                         <mdb-icon fas icon="share-alt" class="grey-text ml-3"></mdb-icon>
+                       </a>
+                       <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                         <mdb-icon fas icon="heart" class="ml-3"></mdb-icon>
+                       </a>
+                      </span>
+                    </mdb-card-footer>
+                  </mdb-card-body>
+                  <!--Card content-->
+                </mdb-card>
+                <!--Card-->
+              </div>
+              <!--Grid column-->
+              <!--Fourth column-->
+              <div class="col-lg-3 col-md-6 mb-3">
+                <!--Card-->
+                <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                  <!--Card image-->
+                  <div class=" view-cascade overlay waves-light" mdbWavesEffect>
+                    <mdb-card-img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/3.jpg" alt="sample photo"></mdb-card-img>
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+                  <!--Card content-->
+                  <mdb-card-body cascade="true" class="text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Blouses</h5>
+                    </a>
+                    <mdb-card-title>
+                      <h4 class="card-title">
+                        <strong>
+                          <a href="">Shirt</a>
+                        </strong>
+                      </h4>
+                    </mdb-card-title>
+                    <!--Rating-->
+                    <ul class="rating">
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                    </ul>
+                    <!--Description-->
+                    <mdb-card-text>Neque porro quisquam est, qui dolorem ipsum quia dolor sit.
+                    </mdb-card-text>
+                    <!--Card footer-->
+                    <mdb-card-footer>
+                      <span class="float-left font-weight-bold">
+                        <strong>119$</strong>
+                      </span>
+                      <span class="float-right">
+                       <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                         <mdb-icon fas icon="shopping-cart" class="grey-text ml-3"></mdb-icon>
+                       </a>
+                       <a data-toggle="tooltip" data-placement="top" title="Share">
+                         <mdb-icon fas icon="share-alt" class="grey-text ml-3"></mdb-icon>
+                       </a>
+                       <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                         <mdb-icon fas icon="heart" class="ml-3"></mdb-icon>
+                       </a>
+                      </span>
+                    </mdb-card-footer>
+                  </mdb-card-body>
+                  <!--Card content-->
+                </mdb-card>
+                <!--Card-->
+              </div>
+              <!--Fourth column column-->
+            </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        
+          
+          <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-3">
+                <!--Card-->
+                <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                  <!--Card image-->
+                  <div class=" view-cascade overlay waves-light" mdbWavesEffect>
+                    <mdb-card-img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/1.jpg" alt="sample photo"></mdb-card-img>
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+                  <!--Card content-->
+                  <mdb-card-body cascade="true" class="text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Denim</h5>
+                    </a>
+                    <mdb-card-title>
+                      <h4>
+                        <strong>
+                          <a href="">Denim trousers</a>
+                        </strong>
+                      </h4>
+                    </mdb-card-title>
+          
+                    <!--Rating-->
+                    <ul class="rating">
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                    </ul>
+                    <!--Description-->
+                    <mdb-card-text>Neque porro quisquam est, qui dolorem ipsum quia dolor sit..
+                    </mdb-card-text>
+                    <!--Card footer-->
+                    <mdb-card-footer>
+                      <span class="float-left font-weight-bold">
+                        <strong>49$</strong>
+                      </span>
+                      <span class="float-right">
+                        <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                          <mdb-icon fas icon="shopping-cart" class="grey-text ml-3"></mdb-icon>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Share">
+                          <mdb-icon fas icon="share-alt" class="grey-text ml-3"></mdb-icon>
+                        </a>
+                        <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                          <mdb-icon fas icon="heart" class="ml-3"></mdb-icon>
+                        </a>
+                      </span>
+                    </mdb-card-footer>
+                  </mdb-card-body>
+                  <!--Card content-->
+                </mdb-card>
+                <!--Card-->
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-3">
+                <!--Card-->
+                <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                  <!--Card image-->
+                  <div class=" view-cascade overlay waves-light" mdbWavesEffect>
+                    <mdb-card-img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/2.jpg" alt="sample photo"></mdb-card-img>
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+                  <!--Card content-->
+                  <mdb-card-body cascade="true" class="text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Shoes</h5>
+                    </a>
+                    <mdb-card-title>
+                      <h4 class="card-title">
+                        <strong>
+                          <a href="">High heels</a>
+                        </strong>
+                      </h4>
+                    </mdb-card-title>
+          
+                    <!--Rating-->
+                    <ul class="rating">
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                    </ul>
+                    <!--Description-->
+                    <mdb-card-text>Neque porro quisquam est, qui dolorem ipsum quia dolor sit.
+                    </mdb-card-text>
+                    <!--Card footer-->
+                    <mdb-card-footer>
+                      <span class="float-left font-weight-bold">
+                        <strong>89$</strong>
+                      </span>
+                      <span class="float-right">
+                         <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                          <mdb-icon fas icon="shopping-cart" class="grey-text ml-3"></mdb-icon>
+                        </a>
+                        <a data-toggle="tooltip" data-placement="top" title="Share">
+                          <mdb-icon fas icon="share-alt" class="grey-text ml-3"></mdb-icon>
+                        </a>
+                        <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                          <mdb-icon fas icon="heart" class="ml-3"></mdb-icon>
+                        </a>
+                      </span>
+                    </mdb-card-footer>
+                  </mdb-card-body>
+                  <!--Card content-->
+                </mdb-card>
+                <!--Card-->
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-3">
+                <!--Card-->
+                <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                  <!--Card image-->
+                  <div class=" view-cascade overlay waves-light" mdbWavesEffect>
+                    <mdb-card-img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/4.jpg" alt="sample photo"></mdb-card-img>
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+                  <!--Card content-->
+                  <mdb-card-body cascade="true" class="text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Outwear</h5>
+                    </a>
+                    <mdb-card-title>
+                      <h4 class="card-title">
+                        <strong>
+                          <a href="">Brown coat</a>
+                        </strong>
+                      </h4>
+                    </mdb-card-title>
+                    <!--Rating-->
+                    <ul class="rating">
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star-half"></mdb-icon>
+                      </li>
+                    </ul>
+                    <!--Description-->
+                    <mdb-card-text>Neque porro quisquam est, qui dolorem ipsum quia dolor sit.
+                    </mdb-card-text>
+                    <!--Card footer-->
+                    <mdb-card-footer>
+                      <span class="float-left font-weight-bold">
+                        <strong>59$</strong>
+                      </span>
+                      <span class="float-right">
+                        <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                         <mdb-icon fas icon="shopping-cart" class="grey-text ml-3"></mdb-icon>
+                       </a>
+                       <a data-toggle="tooltip" data-placement="top" title="Share">
+                         <mdb-icon fas icon="share-alt" class="grey-text ml-3"></mdb-icon>
+                       </a>
+                       <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                         <mdb-icon fas icon="heart" class="ml-3"></mdb-icon>
+                       </a>
+                      </span>
+                    </mdb-card-footer>
+                  </mdb-card-body>
+                  <!--Card content-->
+                </mdb-card>
+                <!--Card-->
+              </div>
+              <!--Grid column-->
+              <!--Fourth column-->
+              <div class="col-lg-3 col-md-6 mb-3">
+                <!--Card-->
+                <mdb-card cascade="true" narrower="true" class="card-ecommerce">
+                  <!--Card image-->
+                  <div class=" view-cascade overlay waves-light" mdbWavesEffect>
+                    <mdb-card-img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/3.jpg" alt="sample photo"></mdb-card-img>
+                    <a>
+                      <div class="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <!--Card image-->
+                  <!--Card content-->
+                  <mdb-card-body cascade="true" class="text-center">
+                    <!--Category & Title-->
+                    <a href="" class="grey-text">
+                      <h5>Blouses</h5>
+                    </a>
+                    <mdb-card-title>
+                      <h4 class="card-title">
+                        <strong>
+                          <a href="">Shirt</a>
+                        </strong>
+                      </h4>
+                    </mdb-card-title>
+                    <!--Rating-->
+                    <ul class="rating">
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                      <li>
+                        <mdb-icon fas icon="star"></mdb-icon>
+                      </li>
+                    </ul>
+                    <!--Description-->
+                    <mdb-card-text>Neque porro quisquam est, qui dolorem ipsum quia dolor sit.
+                    </mdb-card-text>
+                    <!--Card footer-->
+                    <mdb-card-footer>
+                      <span class="float-left font-weight-bold">
+                        <strong>119$</strong>
+                      </span>
+                      <span class="float-right">
+                       <a data-toggle="tooltip" data-placement="top" title="Add to Cart">
+                         <mdb-icon fas icon="shopping-cart" class="grey-text ml-3"></mdb-icon>
+                       </a>
+                       <a data-toggle="tooltip" data-placement="top" title="Share">
+                         <mdb-icon fas icon="share-alt" class="grey-text ml-3"></mdb-icon>
+                       </a>
+                       <a class="active" data-toggle="tooltip" data-placement="top" title="Added to Wishlist">
+                         <mdb-icon fas icon="heart" class="ml-3"></mdb-icon>
+                       </a>
+                      </span>
+                    </mdb-card-footer>
+                  </mdb-card-body>
+                  <!--Card content-->
+                </mdb-card>
+                <!--Card-->
+              </div>
+              <!--Fourth column column-->
+            </div>
+        
+      </div>
+    </div>
+
+  </div>
+
+</main>
+<!--Main Layout-->
