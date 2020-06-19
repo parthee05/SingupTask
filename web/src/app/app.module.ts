@@ -8,8 +8,11 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import {FormsModule} from '@angular/forms';
- 
+import { FormsModule } from '@angular/forms';
+import { BaseService } from './baseservice';
+import { ToasterService } from './toaster.service';
+import { ToastrModule } from 'ngx-toastr';
+import {  HttpClientModule, HttpClient } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +26,10 @@ import {FormsModule} from '@angular/forms';
     ReactiveFormsModule,
     FormsModule,
     MDBBootstrapModule.forRoot(),
+    ToastrModule.forRoot() ,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [BaseService, ToasterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

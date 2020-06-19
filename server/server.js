@@ -1,18 +1,30 @@
 let express = require('express')
-let https = require('http')
+let http = require('http')
 let app = express()
 let bodyParser = require('body-parser')
+var path = require('path');
+// var cookieParser = require('cookie-parser');
+const expressValidator = require('express-validator');
 
 let v1ApiRouter = require('./api/index')
 
 const insecurePort = '5000'
 
-let server = https.createServer(app)
+app.set('views', path.join(__dirname, 'server', 'views'));
+app.set('view engine', 'pug');
+app.use(express.static(path.join(__dirname, 'public')));
+
+let server = http.createServer(app)
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+// app.use(cookieParser());
+app.use(expressValidator());
+// app.use(methodOverride());
 
 app.use('/api/v1',v1ApiRouter)
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 
 server.listen(insecurePort,function(){
