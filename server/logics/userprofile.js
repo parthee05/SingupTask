@@ -5,7 +5,6 @@ const create = async req => {
   const postData = {
     username: json.username,
     password: json.password,
-    password: json.password,
   };
   return await userProfileModel.create(postData);
 };
