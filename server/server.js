@@ -4,7 +4,7 @@ let app = express()
 let bodyParser = require('body-parser')
 var path = require('path');
 const cors = require('cors')
-// var cookieParser = require('cookie-parser');
+var cookieParser = require('cookie-parser');
 const expressValidator = require('express-validator');
 
 let v1ApiRouter = require('./api/index')
@@ -19,9 +19,8 @@ let server = http.createServer(app)
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-// app.use(cookieParser());
+app.use(cookieParser());
 app.use(expressValidator());
-// app.use(methodOverride());
 
 app.use('/api',v1ApiRouter)
 app.use(bodyParser.json())
@@ -38,5 +37,11 @@ var corsOptions = {
   }
   
   app.use(cors(corsOptions))
+
+  app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
 
 module.exports = app
